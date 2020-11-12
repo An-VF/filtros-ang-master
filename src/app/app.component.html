@@ -1,0 +1,9 @@
+<h1>Héroes</h1>
+
+<ul>
+    <li *ngFor="let heroe of filtrarCasa( casaFiltro )"> {{ heroe.nombre }} </li>
+</ul>
+
+<button (click)="casaFiltro='Marvel'">Marvel</button>
+<button (click)="casaFiltro='DC'">DC</button>
+<button (click)="casaFiltro=''">Quitar Filtro</button>
